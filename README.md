@@ -145,7 +145,11 @@ The app uses a JSON configuration to define the layout. Here's an example:
 
 Here are some screenshots of the app in action:
 
-**Home Screen**:
-![Home Screen](/home/ritesh/Downloads/flutter_layout_test.jpeg)
+**Home Screen**: 
+</br>
+</br>
+<img src="https://drive.google.com/uc?export=view&id=13LwdE0uGkaTymi8IFGx7wtQ0M9IXzBli" alt="Image" width="300" height="600">
+
+
 
 
