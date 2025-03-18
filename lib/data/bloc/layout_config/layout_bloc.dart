@@ -12,14 +12,15 @@ class LayoutBloc extends Bloc<LayoutEvent, LayoutState> {
     on<LoadLayoutConfig>(_onLoadLayoutConfig);
   }
 
+  //load local config event
   void _onLoadLayoutConfig(
     LoadLayoutConfig event,
     Emitter<LayoutState> emit,
   ) {
     try {
       emit(LayoutLoading());
-      final Map<String, dynamic> jsonMap = jsonDecode(event.jsonConfig);
-      final LayoutConfigModel configModel = LayoutConfigModel.fromJson(jsonMap);
+      final LayoutConfigModel configModel =
+          LayoutConfigModel.fromJson(event.jsonConfig);
       emit(LayoutLoaded(configModel));
     } catch (e) {
       emit(LayoutError('Failed to parse layout configuration: $e'));

@@ -6,7 +6,7 @@ abstract class LayoutEvent extends Equatable {
 }
 
 class LoadLayoutConfig extends LayoutEvent {
-  final String jsonConfig;
+  final Map<String, dynamic> jsonConfig;
 
   LoadLayoutConfig(this.jsonConfig);
 
